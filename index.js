@@ -25,7 +25,7 @@ app.get("/", function (req, res) {
 
 //1.function to manage local file storage (File data.json)
 function dataManagement(action, input) {
-  let filePath = './public/data.json';
+  let filePath = './data.json';
   //check if file exist -> create new file if not exist
   if (!fs.existsSync(filePath)) {
     fs.closeSync(fs.openSync(filePath, 'w'));
